@@ -74,3 +74,27 @@ const AristoMedia = Object.create({}, {
 
 // Challenge: Write a function that will build, and return, a job object. Make sure you define an argument for each one of the properties you want to be in the object.
 
+const JobMaker = (business, role, employmentStart, employmentEnd) => {
+    let theObjectYouBuilt = Object.create({}, {
+        business: {
+            value: business
+        },
+        role: {
+            value: role
+        },
+        employmentStart: {
+            value: employmentStart
+        },
+        employmentEnd: {
+            value: employmentEnd
+        }  
+    });
+    
+    return theObjectYouBuilt
+}
+
+let Job = JobMaker("circus", "lion tamer", "30455", "woeagf");
+
+console.log(Job);
+
+
